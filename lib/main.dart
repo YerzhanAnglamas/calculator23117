@@ -22,6 +22,13 @@ class _CalculatorState extends State<Calculator> {
   Widget calculator_button(String btn_txt, Color btn_color, Color txt_color){
     return  Container(
       child: RaisedButton(
+        shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(
+                      color: Colors.yellow, 
+                      width: 2.0,
+                  ),
+              ),
         onPressed: (){
           calculation(btn_txt);
         },
@@ -114,6 +121,13 @@ class _CalculatorState extends State<Calculator> {
               children: <Widget>[
                 //this is button Zero
                 RaisedButton(
+                  shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(
+                      color: Colors.yellow, 
+                      width: 2.0,
+                  ),
+              ),
                   padding: EdgeInsets.fromLTRB(34, 20, 128, 20),
                   onPressed: (){
                     calculation('0');
